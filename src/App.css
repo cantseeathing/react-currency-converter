@@ -1,38 +1,111 @@
-.App {
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f0f;
+}
+
+.app {
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color: #232d3f;
+  width: 50rem;
+  height: 25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainTitle {
   text-align: center;
+  color: #008170;
+  font-family: "Abril Fatface";
+  font-size: 55px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.conversion {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 3rem;
+}
+
+input {
+  width: 200px;
+  height: 2.3rem;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Abril Fatface";
+  font-size: 26px;
+  background-color: #005b41;
   color: white;
+  transition-duration: 200ms;
+
+  transition-timing-function: ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background-color: #008170;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  font-family: "Abril Fatface";
+  height: 2.3rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px;
+  font-size: 26px;
+  background-color: #005b41;
+  transition-duration: 200ms;
+  color: white;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background-color: #008170;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.result {
+  border: 1px solid black;
+  text-align: center;
+  margin: 30px auto;
+  width: 30rem;
+  & > p {
+    display: inline-block;
+    font-family: "Abril Fatface";
+    font-size: 32px;
   }
-  to {
-    transform: rotate(360deg);
+  background-color: #008170;
+  border-radius: 10px;
+}
+
+.resultCurrency {
+  color: white;
+  margin-left: 20px;
+}
+
+.clear {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid black;
+  font-family: "Abril Fatface";
+  margin: 0;
+  padding: 0;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background-color: #008170;
+    color: white;
   }
+  float: right;
 }
